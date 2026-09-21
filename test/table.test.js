@@ -6,6 +6,7 @@ const {
     formatTable
 } = require("../src/table");
 
+// Tests that the multiplication table is generated correctly.
 test("generates a multiplication table for 2, 3 and 5", () => {
     const result = generateMultiplicationTable([2, 3, 5]);
 
@@ -17,6 +18,7 @@ test("generates a multiplication table for 2, 3 and 5", () => {
     ]);
 });
 
+// Tests that the multiplication table is formatted correctly.
 test("formats the multiplication table", () => {
     const table = generateMultiplicationTable([2, 3, 5]);
     const result = formatTable(table);
