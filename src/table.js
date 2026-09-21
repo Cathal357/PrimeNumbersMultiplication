@@ -1,0 +1,21 @@
+// Creates a multiplication table from a list of primes.
+function generateMultiplicationTable(primes) {
+    const table = [];
+
+    for (let row = 0; row < primes.length; row++) {
+        const currentRow = [];
+
+        for (let column = 0; column < primes.length; column++) {
+            currentRow.push(primes[row] * primes[column]);
+        }
+
+        table.push(currentRow);
+    }
+
+    return table;
+}
+
+//Makes function available outside of table.js
+module.exports = {
+    generateMultiplicationTable
+};
