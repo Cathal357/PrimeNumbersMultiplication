@@ -29,7 +29,7 @@ function generatePrimes(n) {
     return primes;
 }
 
-//Makes functions available outside of prime.js
+// Makes functions available outside of prime.js
 module.exports = {
     isPrime,
     generatePrimes
