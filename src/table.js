@@ -19,7 +19,15 @@ function generateMultiplicationTable(primes) {
     return table;
 }
 
-// Makes function available outside of table.js
+// Formats the table so the columns line up.
+function formatTable(table) {
+    return table
+        .map(row => row.join("\t"))
+        .join("\n");
+}
+
+// Makes functions available outside of table.js
 module.exports = {
-    generateMultiplicationTable
+    generateMultiplicationTable,
+    formatTable
 };
